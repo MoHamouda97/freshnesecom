@@ -11,7 +11,7 @@ import { productAdded } from '../../../../store/cart/cart.actions';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProductComponent {
-  @Input() product: Product;
+  @Input() product: Product | any;
   
   constructor(private stroe: Store<AppState>) {
     this.product = new Product()

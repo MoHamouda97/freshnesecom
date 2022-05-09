@@ -14,6 +14,7 @@ import { categoriesReducer } from '../../store/reducers/categories.reducers';
 import { LayoutRoutes } from './layout.routs';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from 'src/app/shared/components/footer/footer.component';
 
 
 
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     TopHeaderComponent,
     MidHeaderComponent,
     NavigationComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,7 @@ import { ProductsEffect } from '../../store/products/products.effect';
 import { ProductsResolver } from './resolvers/products.resolver';
 import { ProductComponent } from './components/product/product.component';
 import { ScrollDirective } from 'src/app/shared/directives/scroll.directive';
+import { QuickLinksComponent } from './components/quick-links/quick-links.component';
 
 
 
@@ -20,6 +21,7 @@ import { ScrollDirective } from 'src/app/shared/directives/scroll.directive';
     HomeComponent,
     CategoriesComponent,
     ProductComponent,
+    QuickLinksComponent,
     ScrollDirective
   ],
   imports: [

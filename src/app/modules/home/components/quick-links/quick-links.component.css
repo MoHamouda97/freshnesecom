@@ -1,0 +1,15 @@
+.quick-links{
+    margin-top: 64px;
+}
+
+.quick-links h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 16px;
+}
+
+.quick-links ul li{
+    margin-bottom: 16px;
+}

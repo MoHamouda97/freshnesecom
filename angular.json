@@ -27,7 +27,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap-grid.min.css",
+              "src/assets/css/var.css",
+              "src/assets/css/classes.css",
+              "src/assets/css/radio.css"
             ],
             "scripts": []
           },

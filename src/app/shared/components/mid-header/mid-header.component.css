@@ -1,0 +1,83 @@
+.mid-header{
+    margin: 40px 0 48px 0;
+}
+
+.mid-header .search{
+    box-sizing: border-box;
+    height: 42px;
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    padding: 0 1.5rem;
+}
+
+.mid-header .search .row{
+    height: 100%;
+}
+
+.mid-header .search .row .col-md-4{
+    border-right: 1px solid #D1D1D1;
+}
+
+.mid-header .search select{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 150px;
+    background-image: url('./../../../../assets/icons/dropdown-arrow.png');
+}
+
+.mid-header .search .search-container{
+    position: relative;
+}
+
+.mid-header .search .search-container input{
+    font-weight: 400;
+    font-size: 14px;
+    color: #A9A9A9;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.mid-header .search .search-container img{
+    position: absolute;
+    right: 0;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.mid-header ul li{
+    margin-left: 40px;
+}
+
+.mid-header ul li img{
+    width: 25px;
+}
+
+.mid-header ul li.pro-counts-container{
+    position: relative;
+}
+
+.mid-header ul li.pro-counts-container .pro-counts{
+    position: absolute;
+    right: 11px;
+    top: 15px;
+    width: 16px;
+    height: 16px;
+    background: #E6704B;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 15%);
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    line-height: 17px;
+    font-size: 12px;
+}

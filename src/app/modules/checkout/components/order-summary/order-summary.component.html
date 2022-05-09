@@ -1,0 +1,88 @@
+<section class="order-summary">
+    <div class="billing-header">
+        <h3 class="main-color sub-font">Order Summary</h3>
+        <div class="row step sub-color">
+            <div class="col-md-12">Please enter your payment method</div>
+        </div>
+    </div>
+
+    <div class="order-details">
+        <div class="products">
+            <ng-container *ngIf="isLoaded">
+                <div class="products-list" *ngFor="let product of (products$ | async)">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="image bg-image" [style.background-image]="'url(' + product.thumbnail + ')'"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="product-title main-color">{{product.title}}</h4>
+                            <div class="group s-info">
+                                <span class="info">Farm:</span>
+                                <span>Tharamis Farm</span>
+                            </div>
+                            <div class="group s-info">
+                                <span class="info" style="margin-right: 14px;">Freshness:</span>
+                                <span>1 day old</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="d-block info s-info action">
+                                <img src="assets/icons/wishlist.png" />
+                                Wishlist
+                            </span>
+                            <span class="d-block info s-info action">
+                                <img src="assets/icons/compare.png" />
+                                Compare
+                            </span>
+                            <span class="d-block info s-info action" style="cursor: pointer;" (click)="removeItem(product)">
+                                <img src="assets/icons/remove.png" />
+                                Remove
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="d-block stars">
+                                <img src="assets/icons/stars.png" />
+                            </span>
+                            
+                            <div class="row">
+                                <div class="col-8">
+                                    <span class="d-block cta-color f-bold sub-font price">{{((product.price * product.quantity) - ((product.price * product.discountPercentage) / 100)) | currency}} USD</span>
+                                    <del class="f-bold sub-font info prev-price">{{product.price}} USD</del>
+                                </div>
+                                <div class="col-4">
+                                    <input 
+                                        type="number" 
+                                        [value]="product.quantity" 
+                                        #quantity
+                                        class="input" 
+                                        min="1" 
+                                        style="display: inline-block;width: 50px;"
+                                        (change)="updateQuantity(product, quantity.value)" />
+                                </div>                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="product-total">
+                    <div class="row center">
+                        <div class="col-6">
+                            <span class="d-block sub-font s-info f-bold">Total Order</span>
+                            <span class="s-info sub-font cta-color">Guaranteed delivery day:  June 12, 2020</span>
+                        </div>
+                        <div class="col-6 text-right">
+                            <span class="f-bold sub-font cta-color total-price">{{total$ | async}} USD</span>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+
+            <div class="no-data" *ngIf="!isLoaded">
+                <img src="assets/images/no-data.jpg" class="responsive-img" />
+            </div>            
+        </div>
+    </div>
+</section>

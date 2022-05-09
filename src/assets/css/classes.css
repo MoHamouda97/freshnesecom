@@ -1,0 +1,134 @@
+@import "var.css";
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.main-color{
+    color: var(--main-color);
+}
+
+.cta-color{
+    color: var(--cta-color);
+}
+
+.sub-color{
+    color: var(--sub-color);
+}
+
+.list-default{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-default li{
+    display: inline-block;
+}
+
+.no-decoration{
+    text-decoration: none;
+}
+
+.center{
+    align-items: center;
+}
+
+.sub-font{
+    font-family: var(--sub-font)
+}
+
+.cta-btn{
+    background: var(--cta-color);
+    border: 2px solid var(--btn-border-color);
+    border-radius: 12px;
+    color: #fff;
+    padding: 12px;
+}
+
+.lbl{
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'Poppins'
+}
+
+.input{
+    background: var(--input-background-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--input-color);
+    margin-bottom: 32px;
+    display: block;
+    width: 100%;
+    text-indent: 21px;
+    padding: 11px 0 12px 0;
+}
+
+.input-box{
+    color: var(--main-color);  
+    display: inline-block;
+    width: fit-content; 
+    padding: 11px;
+    text-indent: 10px; 
+}
+
+.m-r-4{
+    margin-right: 4px;
+}
+
+.m-t-35{
+    margin-top: 35px;
+}
+
+.f-bold{
+    font-weight: bold !important;
+}
+
+.w-100{
+    width: auto;
+    display: block;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.no-data{
+    width: 70%;
+    margin: auto;
+    height: 250px;
+}
+
+.responsive-img{
+    width: 100%;
+    height: auto;
+}
+
+.d-block{
+    display: block;
+}
+
+.info{
+    color: var(--input-color);
+}
+
+.s-info{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.bg-image{
+    background-repeat: no-repeat;
+    background-size: cover;
+}

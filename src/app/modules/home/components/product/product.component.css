@@ -1,0 +1,60 @@
+.product-card{
+    box-sizing: border-box;
+    padding: 16px;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    margin-bottom: 55px;
+    min-height: 323px;
+}
+
+.product-card .product-image{
+    position: relative;
+}
+
+.product-card .product-image .image{
+    border-radius: 12px;
+    margin-bottom: 16px;
+    height: 180px;
+}
+
+.product-card .product-image .discount-rate{
+    position: absolute;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    background: #F4F8EC;
+    border-radius: 12px;
+    display: inline-block;
+    width: 54px;
+    height: 18px;
+    left: 12px;
+    top: 12px;
+    text-align: center;
+    padding: 0px 8px;
+}
+
+.product-card .product-description .product-title{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 4px 0px;
+}
+.product-card .product-description .product-brief{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.product-card .product-price .price{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    display: block;
+}
+
+.product-card .product-price .discount{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #A9A9A9;
+}

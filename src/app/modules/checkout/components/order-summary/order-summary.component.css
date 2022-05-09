@@ -1,0 +1,74 @@
+.order-summary{
+    padding: 32px 16px 32px 16px;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+}
+
+.order-summary .order-details{
+    margin-top: 40px;
+}
+
+.order-summary .products .products-list{
+    margin-bottom: 48px;
+}
+
+.order-summary .products .products-list .image{
+    border-radius: 12px;
+    height: 135px;
+    margin-bottom: 12px;
+}
+
+.order-summary .products .product-title{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.order-summary .products .group{
+    margin-bottom: 7px;
+}
+
+.order-summary .products .group .info{
+    margin-right: 40px;
+}
+
+.order-summary .products .stars{
+    margin-top: 12.62;
+    margin-bottom: 17.6px;
+}
+
+.order-summary .products .price{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.order-summary .products .prev-price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.order-summary .products .action {
+    margin-bottom: 8px;
+}
+
+.products-cost div{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 12px;
+}
+
+.product-total{
+    margin: 32px 0;
+}
+
+.product-total .total-price{
+    font-size: 26px;
+    line-height: 39px;
+    text-align: right;  
+}

@@ -1,0 +1,14 @@
+.main-nav{
+    background: #F9F9F9;
+    padding: 16px 45px;
+}
+
+.main-nav ul li {
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 54px;
+}
+
+.main-nav ul li img{
+    margin-left: 5.61px;
+}

@@ -1,0 +1,27 @@
+.checkout{
+    margin-top: 32.5px;
+}
+
+.billing-header h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 4px;
+}
+
+.billing-header .step{
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.billing-content{
+    margin-top: 32px;
+}
+
+.checkout .cta button{
+    width: 218px;
+    margin: 32px 0;
+}

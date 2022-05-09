@@ -1,0 +1,14 @@
+.categories h4{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.categories ul li{
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 12px;
+}

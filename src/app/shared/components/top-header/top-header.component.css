@@ -1,0 +1,23 @@
+.top-header {
+    padding: 0px 80px;
+}
+
+.top-header ul{
+    margin: 16px 0;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.top-header .left-list li{
+    margin-right: 33px;
+}
+
+.top-header .right-list li{
+    margin-left: 38px;
+}
+
+.top-header .border{
+    border-bottom: 1px solid #151515;
+    opacity: 5%;
+}

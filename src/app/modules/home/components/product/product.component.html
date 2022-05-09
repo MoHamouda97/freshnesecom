@@ -1,0 +1,25 @@
+<div class="product-card">
+    <div class="product-image">
+        <div class="image bg-image" [style.background-image]="'url(' + product?.thumbnail + ')'"></div>
+        <span 
+            *ngIf="product?.discountPercentage" 
+            class="discount-rate cta-color sub-font">- {{product?.discountPercentage}} %</span>
+    </div>
+    <div class="product-description">
+        <h6 class="product-title sub-font">{{product?.title}}</h6>
+        <p class="product-brief">{{product?.description | slice:1:38}} ...</p>        
+    </div>
+    <div class="product-price">
+        <div class="row center">
+            <div class="col-md-6">
+                <span class="price sub-font">
+                    {{(product?.price - ((product?.price * product?.discountPercentage) / 100)) | currency}} USD
+                </span>
+                <del class="discount sub-font" *ngIf="product?.discountPercentage">{{product?.price}}</del>
+            </div>
+            <div class="col-md-6 text-right">
+                <button class="cta-btn" (click)="addToCart()">Buy now</button>
+            </div>
+        </div>
+    </div>
+</div>

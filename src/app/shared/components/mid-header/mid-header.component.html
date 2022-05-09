@@ -1,0 +1,44 @@
+<header class="mid-header">
+    <div class="container">
+        <div class="row center">
+            <div class="col-md-3">
+                <a class="logo main-color no-decoration" routerLink="/">
+                    <img src="assets/images/logo.png" />                    
+                </a>
+            </div>
+            <div class="col-md-6">
+                <div class="search sub-font">
+                    <div class="row center">
+                        <div class="col-md-4">                                
+                            <select #category (change)="filter(category.value)">
+                                <option value="products">All categories</option>
+                                <option *ngFor="let cat of categories" [value]="cat">{{cat}}</option>
+                            </select>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="search-container">
+                                <input type="text" placeholder="Search Products, categories ..." [(ngModel)]="query" (keyup.enter)="search(query)" />
+                                <img src="assets/icons/search.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-default text-right">
+                    <li>
+                        <img src="assets/icons/user.png" />
+                    </li>
+                    <li class="pro-counts-container">
+                        <a routerLink="/checkout">
+                            <img src="assets/icons/basket.png" />
+                            <div class="pro-counts" *ngIf="cart">
+                                <span>{{cart}}</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

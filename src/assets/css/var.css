@@ -1,0 +1,11 @@
+:root {
+    --main-color: #151515;
+    --cta-color: #6A983C;
+    --sub-color: #A9A9A9;
+    --btn-border-color: #46760A;
+    --input-background-color: #F9F9F9;
+    --input-border-color: #D1D1D1;
+    --input-color: #A9A9A9;
+    --main-font: 'Open Sans';
+    --sub-font: 'Poppins';
+}

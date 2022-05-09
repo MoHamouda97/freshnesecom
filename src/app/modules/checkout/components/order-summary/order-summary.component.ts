@@ -25,7 +25,7 @@ export class OrderSummaryComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.products$.subscribe((pro: any[]) => (pro.length) ? this.isLoaded = true : false)
+    this.products$.subscribe((pro: any[]) => (pro.length) ? this.isLoaded = true : this.isLoaded = false)
   }
 
   updateQuantity(product: Product, quantity: any) {
